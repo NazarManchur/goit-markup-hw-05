@@ -29,7 +29,7 @@
             >WEB<span class="studio">Studio</span></a
           >
           <ul class="list header-flex">
-            <li><a href="./index.html" class="menu-link link">Studio</a></li>
+            <li><a href="./index.html" class="menu-link link current">Studio</a></li>
             <li>
               <a href="./portfolio.html" class="menu-link link">Portfolio</a>
             </li>
@@ -57,7 +57,7 @@
       <section class="section-one">
         <div class="container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
-          <button class="button-one" type="button">
+          <button class="button-one" data-modal-open type="button">
             <span class="button-text">Order Service</span>
           </button>
         </div>
@@ -327,5 +327,13 @@
       </div>
      </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="button-window-close" ><svg class="close-botton-icon" >
+          <use class="button-close" href="./images/iconsv.svg#icon-close-button"></use>
+        </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
